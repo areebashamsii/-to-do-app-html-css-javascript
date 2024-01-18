@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://images.pexels.com/photos/6193932/pexels-photo-6193932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+}
+
+.todo-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.111);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todo-item:hover {
+  background-color: #e8f5e9;
+}
+
+.done-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #ff4d6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.done-circle.done {
+  background-color: #ff4d6d;
+  border-color: #26a69a;
+  color: #ffffff;
+}
+
+.todo-item-text {
+  flex-grow: 1;
+}
+
+.todo-item.done .todo-item-text {
+  text-decoration: line-through;
+  color: #757575;
+}
+
+.add-task-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.task-input {
+  padding: 10px;
+  border: 1px solid #080808;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.add-task-btn {
+  padding: 10px;
+  background-color: #ff4d6ee7;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-task-btn:hover {
+  background-color: #ff4d6ee7;
+}
+
+h1 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  color: #dd2d4a;
+}

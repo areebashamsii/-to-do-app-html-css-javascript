@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="todo-container">
+      <h1>TODOZ</h1>
+      <div class="add-task-container">
+        <input
+          type="text"
+          class="task-input"
+          id="newTask"
+          placeholder="Add a new task..."
+          onkeypress="addTaskOnEnter(event)"
+        />
+        <button class="add-task-btn" onclick="addTask()">Add Task</button>
+      </div>
+      <div id="todoList">
+        <div class="todo-item">
+          <div class="done-circle"></div>
+          <div class="todo-item-text">Task 1</div>
+        </div>
+        <div class="todo-item">
+          <div class="done-circle"></div>
+          <div class="todo-item-text">Task 2</div>
+        </div>
+        <div class="todo-item">
+          <div class="done-circle"></div>
+          <div class="todo-item-text">Task 3</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
